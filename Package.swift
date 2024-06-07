@@ -21,6 +21,7 @@ let package = Package(
             dependencies: ["HttpClientPackage"]),
         .binaryTarget(
             name: "HttpClient",
-            path: "Sources/HttpClientPackage/HttpClient.xcframework")
+            url: "https://github.com/jadhavd183/http-client/releases/download/v1.0/HttpClient.xcframework.zip",
+            checksum:  "4bd3956f74ebfaf3817063efa15071a59acd14b720a024a13018239d83983725")
     ]
 )
