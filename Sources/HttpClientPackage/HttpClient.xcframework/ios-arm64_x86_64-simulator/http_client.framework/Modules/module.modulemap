@@ -1,0 +1,6 @@
+framework module http_client {
+  umbrella header "http_client.h"
+  export *
+
+  module * { export * }
+}

@@ -1,0 +1,1211 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "http_client",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HttpClient",
+        "printedName": "HttpClient",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "makeAsyncApiCall",
+            "printedName": "makeAsyncApiCall(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11http_client10HttpClientP16makeAsyncApiCall3forqd__10Foundation10URLRequestV_tYaKSeRd__SERd__lF",
+            "mangledName": "$s11http_client10HttpClientP16makeAsyncApiCall3forqd__10Foundation10URLRequestV_tYaKSeRd__SERd__lF",
+            "moduleName": "http_client",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : http_client.HttpClient, τ_1_0 : Swift.Decodable, τ_1_0 : Swift.Encodable>",
+            "sugared_genericSig": "<Self, T where Self : http_client.HttpClient, T : Swift.Decodable, T : Swift.Encodable>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11http_client10HttpClientP",
+        "mangledName": "$s11http_client10HttpClientP",
+        "moduleName": "http_client",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "http_client",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "http_client",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ApiError",
+        "printedName": "ApiError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "networkError",
+            "printedName": "networkError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(http_client.ApiError.Type) -> (any Swift.Error) -> http_client.ApiError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> http_client.ApiError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiError",
+                        "printedName": "http_client.ApiError",
+                        "usr": "s:11http_client8ApiErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "http_client.ApiError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiError",
+                        "printedName": "http_client.ApiError",
+                        "usr": "s:11http_client8ApiErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11http_client8ApiErrorO07networkD0yACs0D0_pcACmF",
+            "mangledName": "$s11http_client8ApiErrorO07networkD0yACs0D0_pcACmF",
+            "moduleName": "http_client"
+          },
+          {
+            "kind": "Var",
+            "name": "httpError",
+            "printedName": "httpError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(http_client.ApiError.Type) -> (Swift.Int) -> http_client.ApiError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> http_client.ApiError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiError",
+                        "printedName": "http_client.ApiError",
+                        "usr": "s:11http_client8ApiErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "http_client.ApiError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiError",
+                        "printedName": "http_client.ApiError",
+                        "usr": "s:11http_client8ApiErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11http_client8ApiErrorO0aD0yACSicACmF",
+            "mangledName": "$s11http_client8ApiErrorO0aD0yACSicACmF",
+            "moduleName": "http_client"
+          },
+          {
+            "kind": "Var",
+            "name": "decodingError",
+            "printedName": "decodingError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(http_client.ApiError.Type) -> (any Swift.Error) -> http_client.ApiError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> http_client.ApiError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiError",
+                        "printedName": "http_client.ApiError",
+                        "usr": "s:11http_client8ApiErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "http_client.ApiError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiError",
+                        "printedName": "http_client.ApiError",
+                        "usr": "s:11http_client8ApiErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11http_client8ApiErrorO08decodingD0yACs0D0_pcACmF",
+            "mangledName": "$s11http_client8ApiErrorO08decodingD0yACs0D0_pcACmF",
+            "moduleName": "http_client"
+          },
+          {
+            "kind": "Var",
+            "name": "unknownError",
+            "printedName": "unknownError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(http_client.ApiError.Type) -> http_client.ApiError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApiError",
+                    "printedName": "http_client.ApiError",
+                    "usr": "s:11http_client8ApiErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "http_client.ApiError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiError",
+                        "printedName": "http_client.ApiError",
+                        "usr": "s:11http_client8ApiErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11http_client8ApiErrorO07unknownD0yA2CmF",
+            "mangledName": "$s11http_client8ApiErrorO07unknownD0yA2CmF",
+            "moduleName": "http_client"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11http_client8ApiErrorO",
+        "mangledName": "$s11http_client8ApiErrorO",
+        "moduleName": "http_client",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "http_client",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HTTPMethod",
+        "printedName": "HTTPMethod",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "GET",
+            "printedName": "GET",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(http_client.HTTPMethod.Type) -> http_client.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "http_client.HTTPMethod",
+                    "usr": "s:11http_client10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "http_client.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "http_client.HTTPMethod",
+                        "usr": "s:11http_client10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11http_client10HTTPMethodO3GETyA2CmF",
+            "mangledName": "$s11http_client10HTTPMethodO3GETyA2CmF",
+            "moduleName": "http_client"
+          },
+          {
+            "kind": "Var",
+            "name": "POST",
+            "printedName": "POST",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(http_client.HTTPMethod.Type) -> http_client.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "http_client.HTTPMethod",
+                    "usr": "s:11http_client10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "http_client.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "http_client.HTTPMethod",
+                        "usr": "s:11http_client10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11http_client10HTTPMethodO4POSTyA2CmF",
+            "mangledName": "$s11http_client10HTTPMethodO4POSTyA2CmF",
+            "moduleName": "http_client"
+          },
+          {
+            "kind": "Var",
+            "name": "PUT",
+            "printedName": "PUT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(http_client.HTTPMethod.Type) -> http_client.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "http_client.HTTPMethod",
+                    "usr": "s:11http_client10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "http_client.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "http_client.HTTPMethod",
+                        "usr": "s:11http_client10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11http_client10HTTPMethodO3PUTyA2CmF",
+            "mangledName": "$s11http_client10HTTPMethodO3PUTyA2CmF",
+            "moduleName": "http_client"
+          },
+          {
+            "kind": "Var",
+            "name": "DELETE",
+            "printedName": "DELETE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(http_client.HTTPMethod.Type) -> http_client.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "http_client.HTTPMethod",
+                    "usr": "s:11http_client10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "http_client.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "http_client.HTTPMethod",
+                        "usr": "s:11http_client10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11http_client10HTTPMethodO6DELETEyA2CmF",
+            "mangledName": "$s11http_client10HTTPMethodO6DELETEyA2CmF",
+            "moduleName": "http_client"
+          },
+          {
+            "kind": "Var",
+            "name": "PATCH",
+            "printedName": "PATCH",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(http_client.HTTPMethod.Type) -> http_client.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "http_client.HTTPMethod",
+                    "usr": "s:11http_client10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "http_client.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "http_client.HTTPMethod",
+                        "usr": "s:11http_client10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11http_client10HTTPMethodO5PATCHyA2CmF",
+            "mangledName": "$s11http_client10HTTPMethodO5PATCHyA2CmF",
+            "moduleName": "http_client"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "http_client.HTTPMethod?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "http_client.HTTPMethod",
+                    "usr": "s:11http_client10HTTPMethodO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11http_client10HTTPMethodO8rawValueACSgSS_tcfc",
+            "mangledName": "$s11http_client10HTTPMethodO8rawValueACSgSS_tcfc",
+            "moduleName": "http_client",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11http_client10HTTPMethodO8rawValueSSvp",
+            "mangledName": "$s11http_client10HTTPMethodO8rawValueSSvp",
+            "moduleName": "http_client",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11http_client10HTTPMethodO8rawValueSSvg",
+                "mangledName": "$s11http_client10HTTPMethodO8rawValueSSvg",
+                "moduleName": "http_client",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11http_client10HTTPMethodO",
+        "mangledName": "$s11http_client10HTTPMethodO",
+        "moduleName": "http_client",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ApiEndpoint",
+        "printedName": "ApiEndpoint",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "baseURLString",
+            "printedName": "baseURLString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11http_client11ApiEndpointP13baseURLStringSSvp",
+            "mangledName": "$s11http_client11ApiEndpointP13baseURLStringSSvp",
+            "moduleName": "http_client",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11http_client11ApiEndpointP13baseURLStringSSvg",
+                "mangledName": "$s11http_client11ApiEndpointP13baseURLStringSSvg",
+                "moduleName": "http_client",
+                "genericSig": "<τ_0_0 where τ_0_0 : http_client.ApiEndpoint>",
+                "sugared_genericSig": "<Self where Self : http_client.ApiEndpoint>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "apiPath",
+            "printedName": "apiPath",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11http_client11ApiEndpointP7apiPathSSvp",
+            "mangledName": "$s11http_client11ApiEndpointP7apiPathSSvp",
+            "moduleName": "http_client",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11http_client11ApiEndpointP7apiPathSSvg",
+                "mangledName": "$s11http_client11ApiEndpointP7apiPathSSvg",
+                "moduleName": "http_client",
+                "genericSig": "<τ_0_0 where τ_0_0 : http_client.ApiEndpoint>",
+                "sugared_genericSig": "<Self where Self : http_client.ApiEndpoint>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "apiVersion",
+            "printedName": "apiVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11http_client11ApiEndpointP10apiVersionSSvp",
+            "mangledName": "$s11http_client11ApiEndpointP10apiVersionSSvp",
+            "moduleName": "http_client",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11http_client11ApiEndpointP10apiVersionSSvg",
+                "mangledName": "$s11http_client11ApiEndpointP10apiVersionSSvg",
+                "moduleName": "http_client",
+                "genericSig": "<τ_0_0 where τ_0_0 : http_client.ApiEndpoint>",
+                "sugared_genericSig": "<Self where Self : http_client.ApiEndpoint>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "headers",
+            "printedName": "headers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11http_client11ApiEndpointP7headersSDyS2SGSgvp",
+            "mangledName": "$s11http_client11ApiEndpointP7headersSDyS2SGSgvp",
+            "moduleName": "http_client",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11http_client11ApiEndpointP7headersSDyS2SGSgvg",
+                "mangledName": "$s11http_client11ApiEndpointP7headersSDyS2SGSgvg",
+                "moduleName": "http_client",
+                "genericSig": "<τ_0_0 where τ_0_0 : http_client.ApiEndpoint>",
+                "sugared_genericSig": "<Self where Self : http_client.ApiEndpoint>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "method",
+            "printedName": "method",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPMethod",
+                "printedName": "http_client.HTTPMethod",
+                "usr": "s:11http_client10HTTPMethodO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11http_client11ApiEndpointP6methodAA10HTTPMethodOvp",
+            "mangledName": "$s11http_client11ApiEndpointP6methodAA10HTTPMethodOvp",
+            "moduleName": "http_client",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "http_client.HTTPMethod",
+                    "usr": "s:11http_client10HTTPMethodO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11http_client11ApiEndpointP6methodAA10HTTPMethodOvg",
+                "mangledName": "$s11http_client11ApiEndpointP6methodAA10HTTPMethodOvg",
+                "moduleName": "http_client",
+                "genericSig": "<τ_0_0 where τ_0_0 : http_client.ApiEndpoint>",
+                "sugared_genericSig": "<Self where Self : http_client.ApiEndpoint>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "apiKey",
+            "printedName": "apiKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11http_client11ApiEndpointP6apiKeySSSgvp",
+            "mangledName": "$s11http_client11ApiEndpointP6apiKeySSSgvp",
+            "moduleName": "http_client",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11http_client11ApiEndpointP6apiKeySSSgvg",
+                "mangledName": "$s11http_client11ApiEndpointP6apiKeySSSgvg",
+                "moduleName": "http_client",
+                "genericSig": "<τ_0_0 where τ_0_0 : http_client.ApiEndpoint>",
+                "sugared_genericSig": "<Self where Self : http_client.ApiEndpoint>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "makeRequest",
+            "printedName": "makeRequest(pathComponent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11http_client11ApiEndpointPAASYRzSS8RawValueSYRtzrlE11makeRequest13pathComponent10Foundation10URLRequestVSSSg_tF",
+            "mangledName": "$s11http_client11ApiEndpointPAASYRzSS8RawValueSYRtzrlE11makeRequest13pathComponent10Foundation10URLRequestVSSSg_tF",
+            "moduleName": "http_client",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.RawRepresentable, τ_0_0 : http_client.ApiEndpoint, τ_0_0.RawValue == Swift.String>",
+            "sugared_genericSig": "<Self where Self : Swift.RawRepresentable, Self : http_client.ApiEndpoint, Self.RawValue == Swift.String>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeRequest",
+            "printedName": "makeRequest(pathComponent:params:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11http_client11ApiEndpointPAASYRzSS8RawValueSYRtzrlE11makeRequest13pathComponent6params10Foundation10URLRequestVSSSg_SDyS2SGtF",
+            "mangledName": "$s11http_client11ApiEndpointPAASYRzSS8RawValueSYRtzrlE11makeRequest13pathComponent6params10Foundation10URLRequestVSSSg_SDyS2SGtF",
+            "moduleName": "http_client",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.RawRepresentable, τ_0_0 : http_client.ApiEndpoint, τ_0_0.RawValue == Swift.String>",
+            "sugared_genericSig": "<Self where Self : Swift.RawRepresentable, Self : http_client.ApiEndpoint, Self.RawValue == Swift.String>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeRequest",
+            "printedName": "makeRequest(pathComponent:httpBody:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11http_client11ApiEndpointPAASYRzSS8RawValueSYRtzrlE11makeRequest13pathComponent0A4Body10Foundation10URLRequestVSSSg_AI4DataVtF",
+            "mangledName": "$s11http_client11ApiEndpointPAASYRzSS8RawValueSYRtzrlE11makeRequest13pathComponent0A4Body10Foundation10URLRequestVSSSg_AI4DataVtF",
+            "moduleName": "http_client",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.RawRepresentable, τ_0_0 : http_client.ApiEndpoint, τ_0_0.RawValue == Swift.String>",
+            "sugared_genericSig": "<Self where Self : Swift.RawRepresentable, Self : http_client.ApiEndpoint, Self.RawValue == Swift.String>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11http_client11ApiEndpointP",
+        "mangledName": "$s11http_client11ApiEndpointP",
+        "moduleName": "http_client",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLSession",
+        "printedName": "URLSession",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "makeAsyncApiCall",
+            "printedName": "makeAsyncApiCall(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So12NSURLSessionC11http_clientE16makeAsyncApiCall3forx10Foundation10URLRequestV_tYaKSeRzlF",
+            "mangledName": "$sSo12NSURLSessionC11http_clientE16makeAsyncApiCall3forx10Foundation10URLRequestV_tYaKSeRzlF",
+            "moduleName": "http_client",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSURLSession",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "intro_iOS": "7.0",
+        "objc_name": "NSURLSession",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "HttpClient",
+            "printedName": "HttpClient",
+            "usr": "s:11http_client10HttpClientP",
+            "mangledName": "$s11http_client10HttpClientP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

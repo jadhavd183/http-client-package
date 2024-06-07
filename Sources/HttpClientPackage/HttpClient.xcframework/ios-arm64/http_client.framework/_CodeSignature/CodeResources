@@ -4,33 +4,88 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/HttpClient.h</key>
+		<key>Headers/http_client.h</key>
 		<data>
-		ZTaNaiDOmrSa+hUGo3UBIhH0Zig=
+		Gx2Bvm5cpaXpHpJfP/wWiJvXBRs=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Mt8grfpuB1Ht6C+pzqF+HjYHlKc=
+		dejcIHgABkOz6/Y81DHTJhVN+Tk=
+		</data>
+		<key>Modules/http_client.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		d3JuuE743UEBxu4daVF+3AhT5f4=
+		</data>
+		<key>Modules/http_client.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		KWn+MP5uq6VfJwRUSF1oOS5va0Y=
+		</data>
+		<key>Modules/http_client.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<data>
+		8/7W/aSVgquIr6iCvg/uyJn5Cyw=
+		</data>
+		<key>Modules/http_client.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<data>
+		KWn+MP5uq6VfJwRUSF1oOS5va0Y=
+		</data>
+		<key>Modules/http_client.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<data>
+		0xFXmENvZqXFhsGYsTH0gXbgxuU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		gVKWUadcxYNN3BVciZZO+U5D1sc=
+		D2r1mMfMwBvaO7Ebtdt3POLnS4w=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/HttpClient.h</key>
+		<key>Headers/http_client.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FNw4YI1yOLk44ZYd0Nv9HlQ1zbQyI/oAFRW0K8N3jwM=
+			Y0DAxBG7zYAPyP6PpytUVhxCi/FD8sXbhqZ2ljhYcZE=
+			</data>
+		</dict>
+		<key>Modules/http_client.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SSb+yfh7dm180hkJ+jltJh2j6EfWERigFkc0H9bn77w=
+			</data>
+		</dict>
+		<key>Modules/http_client.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RTEj3L5OB/NcztrbrtoN7+BquAWSlkkT+XvX8hIqyOQ=
+			</data>
+		</dict>
+		<key>Modules/http_client.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7BNtxI5J4huhETTI+3HHv+cRmOtfKdATODqEZlgZ6oE=
+			</data>
+		</dict>
+		<key>Modules/http_client.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RTEj3L5OB/NcztrbrtoN7+BquAWSlkkT+XvX8hIqyOQ=
+			</data>
+		</dict>
+		<key>Modules/http_client.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mFMkza1L+Q1CrINr/6u5b3BHU1pqVMMuoGDOYme2+Wc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			foSTi7286Am+izHvlIvJE7JBrY/yqAahKXrBtARncOk=
+			2Ul5vX5u+IDDn8tnf+4LF6X/cUU1DMnqwzeWzixRjy4=
 			</data>
 		</dict>
 	</dict>
